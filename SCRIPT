@@ -1,17 +1,17 @@
 print("Script Source Released on 17.03.2024 (DD/MM/YYYY because Islands is Dead!")
-warn("hello!")
+warn("THIS SCRIPT IS DISCONTINUED FROM NOW!")
 for i = 1, 50 do
-  print("flazy on Top | discord.gg/MbsxuDEz")
+  print("Nekohub on Top | discord.gg/MbsxuDEzgT")
 end
--- This is a pcript so dont joke abt the source type (its older than 90% of Roblox comminity) --
+-- This is a pretty old script so dont joke abt the source type (its older than 90% of Roblox comminity) --
 
 repeat wait() until game:IsLoaded()
 
 local IsPremium = true 
 local DidKey = false
-local ScriptVersion = "V5"
+local ScriptVersion = "V4"
 
-local FileName = "Flaxhub"
+local FileName = "Nekohub"
 local GameName = "Islands"
 local DeveloperVersion = true
 
@@ -27,7 +27,7 @@ end
 
 SendNotification("Welcome!", "Welcome to "..FileName .. " " .. ScriptVersion.."!")
 
-local PremiumText1 = "Premium is only 2$ Lifetime. Go buy it in discord.gg/MbsxuDET"
+local PremiumText1 = "Premium is only 2$ Lifetime. Go buy it in discord.gg/MbsxuDEzgT"
 
 if isfolder(FileName) then
 
@@ -120,8 +120,8 @@ CreateFolder("ello")
 
 function KeySystem()
 
-	local WEBHOOKURL = "https://discord.com/api/webhooks/1199037452149587969/VXiJsWI5HOiECHm6cbFQDVjLqVmnuzZ-bynW8C8MXkY-6C_bGInx8JOmTEWPKWAtLINK"
-	local WEBHOOKURL2 = "https://discord.com/api/webhooks/1199037452149587969/VXiJsWI5HOiECHm6cbFQDVjLqVmnuzZ-bynW8C8MXkY-6C_bGInx8JOmTEWPKWAtLINK"
+	local WEBHOOKURL = "https://discord.com/api/webhooks/1209146127522340906/SA1YbYoWsvA_B4_6bu31sJuEJEoU39hoi-6t-8NGPTgIExKfjRLnrKSJAGbw9MkUUcDg"
+	local WEBHOOKURL2 = "https://discord.com/api/webhooks/1119566653752086588/M5OdNgjZ7a2-FzNR6t_CBJRgM5VwSZ-mGgtnj7cmPCjiJ0wxAqzzF-7xdC3uHs2InG-t"
 
 	local function getexploit()
 		local webhookcheck =
@@ -333,7 +333,7 @@ function KeySystem()
 
 	function CheckKeyButtonClicked(key)
 
-		if key == "Flaxy" then
+		if key == "NekoHubOnTop!" then
 			Responce = true
 		end
 
@@ -2000,11 +2000,11 @@ local Window
 local Tabs
 
 
-if DeveloperVersion == true then
+if DeveloperVersion == false then
 	if DidKey == true then
 		Window = Fluent:CreateWindow({
-			Title = "FlaxyHub "..ScriptVersion.." [Paid] "..holidayMessage,
-			SubTitle = "by Flaxy",
+			Title = "Islands.God "..ScriptVersion.." [FREE!] "..holidayMessage,
+			SubTitle = "by neverloseyoursmile_88 and soldo_io",
 			TabWidth = 160,
 			Size = UDim2.fromOffset(580, 460),
 			Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -2050,7 +2050,7 @@ if DeveloperVersion == true then
 else
 	Window = Fluent:CreateWindow({
 		Title = "Islands.God "..ScriptVersion.." [Developer!] "..holidayMessage,
-		SubTitle = "Flaxy",
+		SubTitle = "by neverloseyoursmile_88 and soldo_io",
 		TabWidth = 160,
 		Size = UDim2.fromOffset(580, 460),
 		Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -2067,7 +2067,7 @@ else
 		BypassFun = Window:AddTab({ Title = "Bypass.Fun", Icon = "server" }),
 		Other = Window:AddTab({ Title = "Other", Icon = "sidebar" }),
 		Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-		DeveloperTab = Window:AddTab({ Title = "Dev", Icon = "settings" }),
+		DeveloperTab = Window:AddTab({ Title = "Dev", Icon = "" }),
 	}
 end 
 
@@ -9784,16 +9784,6 @@ Toggle = Tab:CreateToggle({
 		Values = {"Tween","TweenV3", "MiniTp", "Instant", "Pathfinding", "PathfindingV2"},
 		Multi = false,
 		Default = 1,
-	})
-
-
-
-
-	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
-		Title = "Dupe Items",
-		Values = {"700 steel rods","Nothing", "52 fertiliser", "Nothing", "Nothing", "Nothing" "Nothing", "Nothing",},
-		Multi = true,
-		Default = 0,
 	})
 
 
